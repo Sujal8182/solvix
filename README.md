@@ -1,1 +1,2 @@
-# solvix
+# day-1
+ 

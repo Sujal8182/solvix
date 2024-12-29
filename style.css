@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Unbounded:wght@200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Unbounded", serif;
+}
+.main{
+    width: 100%;
+    height: auto;
+    background-color: rgb(16, 17, 20);
+}
+.nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(16, 17, 20);
+    border-bottom: 1px solid white;
+}
+.nav .left{
+    width: auto;
+    height: auto;
+}
+.nav .left h1{
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: white;
+}
+.nav .right{
+    width: auto;
+    height: auto;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 4vw;
+    align-items: center;
+}
+.nav .right a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: none;
+}
+.nav .right .bag{
+    width: auto;
+    height: auto;
+    border: 1px solid white;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 6px 16px;
+}
+.nav .right .bag i{
+    font-size: 17px;
+    color: white;
+}
+.nav .right .menu{
+    color: white;
+    font-size: 30px;
+}
+.nav .right .bag p{
+    font-size: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 3px 5px;
+    margin-left: 2px;
+    color: white;
+}
+.hero{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.hero .l{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .l img{
+    width: 75vw;
+    height: auto;
+    object-fit: cover;
+    margin-block: 6vh;
+}
+.hero .lr{
+    width: 100% ;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero .lr h1{
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero .lr .text-container {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    position: relative;
+}
+  
+.hero .lr .text-container::before {
+    content: "CREATIONS";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* color: transparent; */
+    -webkit-text-stroke: 1px white; /* Creates the stroke effect */
+    z-index: -1;
+}
+  
+.hero .lr .text-container {
+    mix-blend-mode: lighten; /* Adjusts the style of overlapping text */
+} 
+
+.hero .lr p{
+    margin-block: 3vh;
+    font-size: 14px;
+    color: white;
+    width: 85%;
+    text-align: center;
+}
+.hero .lr button{
+    text-transform: uppercase;
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+    outline: none;
+    font-size: 17px;
+    border-radius: 30px;
+    padding: 2vw 0px;
+    width: 80%;
+    transition: .7s;
+    font-weight: 600;
+    cursor: pointer;
+}
+.hero .lr button:hover{
+    color: black;
+    background-color: white;
+    border: black;
+}
+.rel{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-block: 12vh;
+}
+.rel h1{
+    font-size: 25px;
+    text-align: center;
+    width: 50%;
+    text-transform: uppercase;
+}
+.rel .tag{
+    margin-block:5vh ;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 8vw;
+}
+.rel .tag img{
+    width: 120px;
+    height: auto;
+    object-fit: cover;
+}
+.rel .tag img:nth-of-type(even){
+    width: 80px;
+    height: auto;
+    object-fit: cover;
+}
+.rel .tag .sm{
+    width: 60px;
+}
+.rel .ball{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.rel .ball img{
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    /* background-color: rgb(16, 17, 20); */
+    /* box-shadow: inset 0 0 10px red; */
+    border-radius: 50%;
+    /* background: radial-gradient(
+          circle,
+          rgba(0, 0, 0, 0) 60%,
+          rgba(0, 0, 0, 0.6) 100%
+        ); */ 
+}
+.cap{
+    width: 100%;
+    height: auto;
+    color: white;
+    padding-block: 3vh;
+    padding-inline: 3%;
+}
+.cap .ca h1{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.cap .ca .p{
+    margin-top: 5vh;
+    font-size: 23px;
+    width: 90%;
+    text-transform: uppercase;
+}
+.cap .box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.cap .box .b1{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 15px;
+    background-color: rgb(20 24 35);
+    margin-top: 30px;
+}
+.cap .box i{
+    font-size: 40px;
+    object-fit: cover;
+    color: white;
+}
+.cap .box h2{
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: 500;   
+}
+.cap .box p{
+    font-size: 14px;
+    color: rgb(226, 223, 223);
+    width: 80%;
+    text-align: center;
+    font-weight: 300;
+}
+.features{
+    width: 100%;
+    height: auto;
+    padding-inline: 3%;
+    color: white;
+}
+.features h1{
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.features .feat{
+    width: 100%;
+    height: 280px; 
+    background-image: url('f1.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;   
+    display: flex;
+    align-items: flex-end;   
+    border-radius: 7px; 
+    overflow: hidden;
+    margin-top: 4vh;
+    /* box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px inset, rgba(0, 0, 0, 0.09) 0px 4px 2px inset, rgba(0, 0, 0, 0.09) 0px 8px 4px inset, rgba(0, 0, 0, 0.09) 0px 16px 8px inset, rgba(0, 0, 0, 0.09) 0px 32px 16px inset; */
+}
+.features .feat .p{
+   
+    /* height: 21px; */
+    margin-bottom: 20px;
+    /* display: flex; */
+    flex-wrap: nowrap;
+    align-items: center;
+    font-style: italic;
+    overflow: hidden;
+    width: 150%;
+}
+.features .feat .p p{
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    width: 150%;    
+
+}
+.features .f2{
+    background-image: url('f2.avif');
+}
+.features .f3{
+    background-image: url('f3.avif');
+}
+.features .f4{
+    background-image: url('f4.avif');
+}
+.blah{
+    width: 100%;
+    height: auto;
+    margin-top: 5vh;
+    color: white;
+    padding-inline: 3%;
+}
+.blah .bl{
+    width: 100%;
+    height: 330px;
+    border-bottom:1px solid white ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.blah .bl .tt h1{
+    font-size: 50px;
+    line-height: 30px;
+    margin-top: 4vh;
+}
+.blah .bl .tt h3{
+    font-size: 20px;
+    margin-top: 2vh;
+}
+.blah .bl span{
+    font-size: 13px;
+    color: rgb(210, 238, 224);
+    font-weight: 300;
+    text-align: start;
+}
+.blah .bl p{
+    font-size: 13px;
+    color: rgb(185, 194, 196);
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.insights{
+    width: 100%;
+    height: auto;
+    padding-inline: 3%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    margin-top: 7vh;
+}
+.insights h1{
+    font-size: 28px;
+    margin-bottom: 5vh;
+}
+.insights .isn{
+    width: 100%;
+    height: 280px;
+    background-color: rgb(26 29 37);
+    border-radius: 5px;
+    margin: 3vh 0px;
+}
+.insights .isn img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.insights .isn .bot{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;   
+    text-indent: 20px; 
+}
+
+.insights .isn .bot p{
+    font-size: 10px;
+    color: rgb(210, 238, 224);
+    font-weight: 300;
+}
+.insights .isn .bot i{
+    font-size: 5px;
+    margin: 0px 5px;
+}
+.insights .isn .bot h2{
+    font-size: 20px;
+}
+.footer{
+    width: 100%;
+    height: auto;
+    padding-inline: 3%;
+    border-top: 1px solid white;
+    margin-top: 5vh;
+    padding-top: 3vh;
+}
+.footer .foot{
+    width: 100%;
+    height: 200px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.foot h1{
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+.foot p{
+    font-size: 13px;
+    text-transform: capitalize;
+    font-weight: 300;
+    color: rgb(210, 238, 224);
+}
+.last{
+    width: 100%;
+    padding-inline: 3%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding-block: 6vh;
+    border-top: 1px solid white;
+    border-top-width: 80%;
+}
+.last h1{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 2vh;
+}
+.last p{
+    font-size: 15px;
+    text-transform: capitalize;
+    line-height: 23px;
+
+}
+.last a{
+    text-decoration: underline;
+    color: white;
+}
+
+
+
+
